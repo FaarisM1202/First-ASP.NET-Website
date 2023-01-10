@@ -1,0 +1,25 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+    <head>
+        @* We're going to use some server-side code in this document.
+            There's many ways on how to do it.
+        *@
+        <title>@ViewData["Title"]</title>
+        @*<title>@ViewBag.Title</title>*@
+        <link rel="stylesheet" href="~/css/site.css" />
+        <script src="~/js/site.js"></script>
+        <link rel="shortcut icon" href="~/favicon.ico" />
+    </head>
+    <body>
+        <h1>First ASP.NET Website</h1>
+        @* This is a method call
+            This replaces the content already shown inside
+            the view.
+        *@
+        @RenderBody()
+
+        <footer>
+            &copy;@DateTime.Today.Year
+        </footer>
+    </body>
+</html>

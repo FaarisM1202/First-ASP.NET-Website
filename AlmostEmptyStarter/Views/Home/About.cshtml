@@ -1,0 +1,13 @@
+﻿@{
+    @* Same goes with this *@
+    ViewData["Title"] = "About";
+}
+
+<!--Using this as a navigation link-->
+@*@Html.ActionLink("Go Home", "Index", "Home")*@
+<!--There's also another way to do this-->
+@* Tag Helper Syntax in a modern way*@
+
+<a asp-controller="Home" asp-action="Index">Go Home</a>
+<h1>About Page</h1>
+<p>This is going to be info into the About Page!</p>

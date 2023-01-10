@@ -1,0 +1,17 @@
+﻿@{
+    @* We're adding this in because since we're adding 
+        the value to Home Page into the ViewData, 
+        that will let us retrieve that data from the _Layout page.*@
+    ViewData["Title"] = "Home Page";
+}
+
+<a asp-controller="Home" asp-action="About">About</a>
+<h1>Hello World!</h1>
+<ol>
+    @for (int i = 0; i < 10; i++)
+    {   
+        <li>Movie #@i</li>
+    }
+</ol>
+
+
